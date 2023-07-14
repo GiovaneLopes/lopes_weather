@@ -1,0 +1,66 @@
+name: lopes_weather
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_modular: ^5.0.3
+  flutter_bloc: ^8.1.2
+  geolocator: ^9.0.2
+  weather: ^3.0.0
+  flutter_dotenv: ^5.0.2
+  latlong2: ^0.9.0
+  intl: ^0.18.0
+  asuka: ^2.0.2
+  lat_lng_to_timezone: ^0.2.0
+  timezone: ^0.9.1
+  device_preview: ^1.1.0
+  auto_size_text: ^3.0.0
+  geocoding: ^2.0.5
+  http: ^0.13.5
+  flutter_google_places: ^0.3.0
+  weather_icons: ^3.0.0
+  cached_network_image: ^3.2.3
+  quiver: ^3.2.1
+  animate_gradient: ^0.0.2
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  android: "launcher_icon"
+  background_color: "#E0E0E0"
+  ios: true
+  image_path: "assets/icons/lopes_weather_launch_logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/icons/lopes_weather_launch_logo.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/icons/lopes_weather_launch_logo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/icons/lopes_weather_launch_logo.png"
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/
+    - assets/icons/lopes_weather_launch_logo.png
